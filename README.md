@@ -1,7 +1,7 @@
 Cfnc
 ---
 
-Noone loves Confluence.
+Just kidding.
 
 # Install
 1. Clone repository from GitHub:
