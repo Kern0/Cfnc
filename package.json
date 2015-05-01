@@ -1,0 +1,18 @@
+{
+  "name": "Cfnc",
+  "description": "Kern0's Confluence valerypopoff statistics",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "node cfnc.js"
+  },
+  "dependencies": {
+    "express": "3.5.1",
+    "async": "~0.9.0",
+    "node-twitter": "~0.5.2"
+  },
+  "main": "kdeploy.js",
+  "repository": "",
+  "author": "Arseniy Maximov <localhost@kern0.ru> (http://kern0.ru)",
+  "license": "MIT"
+}
