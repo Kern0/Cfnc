@@ -1,11 +1,11 @@
-KtulhuDeploy
+Cfnc
 ---
 
-Simple deployment server for handling Git WebHooks.
+Noone loves Confluence.
 
 # Install
 1. Clone repository from GitHub:
-`git clone git@github.com:Kern0/KtulhuDeploy.git`
+`git clone git@github.com:Kern0/Cfnc.git`
 2. Install modules
 `npm install`
 
@@ -15,22 +15,18 @@ Simple deployment server for handling Git WebHooks.
 2. Configure the server in `config.js`:
 ```JavaScript
 module.exports = {
-	port: process.env.PORT || 80, // KtulhuDeploy port
+	port: process.env.PORT || 80,
 	
-	applications: {
-		'42gc': {
-			repo_name: '42GC', // Repository name. Capitalized or not - nobody cares
-			repo_branch: 'master', // Deployment branch. Commits from other branches will be ignored
-			
-			execute: '/home/kern0/DEV/42GC/scripts/deploy.sh' // Full path
-		},
-		
-		enabled: ['42gc'] // Enabled repository configurations
+	twitter_oauth: {
+		consumer_key: '',
+		consumer_secret: '',
+		token: '',
+		token_secret: ''
 	}
 };
 ```
 Also see `config.example.js` file.
-3. Recieve Git WebHook
+3. Recieve output at /confluence
 4. ???
 5. PROFIT
 6. Or get error in response JSON.
